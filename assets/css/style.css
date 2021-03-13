@@ -9,7 +9,13 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #eff5f8;
 }
-
+header{
+  display: flex;
+  background-color: steelblue;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 h2 {
   font-size: 3em;
   margin: 0px;
@@ -32,9 +38,15 @@ button {
   transition-property: background-color;
   transition-timing-function: linear;
   margin-top: 0.6em;
-  float: right;
+ /* float:inline-start;*/
 }
-
+div{
+  display: flex;
+  background-color: rgb(105, 186, 212);
+  border: 3px solid #093755;
+  align-items: center;
+  justify-content: center;
+}
 .input-group {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -45,41 +57,42 @@ label {
 }
 
 input {
-  background-color: #f1f3f4;
-  border-radius: 2px;
-  border-width: 0;
-  font-size: 1em;
-  height: 45px;
-  line-height: 20px;
-  margin: 0;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 8px 8px 8px 8px;
-  transition-delay: 0s, 0s;
-  transition-duration: 0.2s, 0.2s;
-  transition-property: background-color, color;
-  transition-timing-function: ease, ease;
-  vertical-align: middle;
-  width: 100%;
+  text-align: center; 
+  font-size:400%; 
+  font-weight: bolder;
+   letter-spacing: 5px; 
+   line-height: 100%;
+   
 }
 
 input:hover {
   background-color: #e8eaed;
 }
 
-.card {
-  background-color: #fff;
-  border: 1px solid #eceff1;
+.word {
+  /*border: 1px solid #093755;*/
   border-radius: 8px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
-    rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
-  margin: 2%;
-  margin-top: 80px;
-  padding: 20px;
-  width: 46%;
-  overflow: hidden;
+  margin: 25px 20%;
+  align-content: space-around;
+
+}
+.result{
+  background-color: rgb(107, 78, 4);
+  border: 2px solid #093755;
+  border-radius: 8px;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+}
+.timer{
+  background-color: rgb(219, 172, 51);
+  border: 3px solid #093755;
+  border-radius: 8px;
   position: relative;
-  float: left;
+  width: 50%;
+  height: 200px;
+  align-content: center;
+  text-align: center;
 }
 
 .card::after {

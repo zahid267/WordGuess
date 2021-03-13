@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <!--<link rel="stylesheet" href="./assets/css/style.css1" />-->
+   <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Auth Form</title>
   </head>
 
   <body>
-    <button id="start">Start the Game</button><br /><br />
-    <div style="width: 300px; height:300px;text-align: center; vertical-align: middle;">
-      <input type="text" nama="word" id="word" value="" style="text-align: center; font-size:xx-large; font-weight: bolder; letter-spacing: 5px; line-height: 300%;">
-    </div>
-
-
+    <header>
+      <h1>Word Guess Game</h1>
+      <button id="start_button">Start the Game</button>
+    </header>
+    
+    <section class="word">
+      <input type="text" name="word" id="word" value="">
+    </section>
+    <div>
+    <section class="timer">
+      <h3 id="result_msg"></h3>
+      <h2 id="timerCount"></h2>
+      <h2>Time Remaining</h2>
+    </section>
+    <section class="result">
+      <h3><strong>Wins : </strong><span id="wins"></span></h3>
+      <h3><strong>Loses : </strong><span id="loses"></span></3>
+    </section>
+  </div>
+<center><button id="reset_button">Reset</button></center>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
